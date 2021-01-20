@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarvelApp</title>
+  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body class="hidden">
+
+  <!-- Loader -->
+  <div class="onload" id="onload">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Navegacion -->
+
+  <header>
+    <nav id="nav " class="nav1">
+      <div class="container-nav">
+        <div class="logo" onclick="backTohome()">
+          <img src="./image/logo.png" alt="logo" />
+        </div>
+        <div class="links" id="links">
+          <a href="#" id="linkInicio" class="btn-link">Home</a>
+          <a href="#look" id="linkSearch" class="btn-link">Search</a>
+          <a href="#social" id="linkSocial" class="btn-link">Social</a>
+        </div>
+        <div class="icono" id="open">
+          <span>&#9776;</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text">
+      <h1>Marvel Hero's</h1>
+      <h2>Help us saving the world of Thanos</h2>
+    </div>
+  </header>
+
+  <!-- Busqueda -->
+
+  <main>
+    <section class="team container" id="team">
+      <div class="team-content" id="look">
+        <h3>Search our heroes</h3>
+        <p class="after">Know the marvel hero´s</p>
+      </div>
+
+
+      <div class="search container" id="searcHero">
+        <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i></a>
+        <input type="search" class="search-input" id="search" name="search" placeholder="Search here..." />
+        <i class="fas fa-search" id="lupa"></i>
+        <ul></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contenedor heroes -->
+
+  <div id="content" class="content"></div>
+
+
+  <!-- Paginacion -->
+
+  <nav class="nav-hero">
+    <div class="btn-content">    
+      <button class="page-item disabled" id="arrowBack"><a class="page-link" href="#" aria-disabled="true">Previous</a></button>
+      <div id="pageNumber" class="page-number-btn"></div> 
+      <button class="page-item"><a class="page-link" href="#" id="arrowNext">Next</a></button> 
+    </div>   
+  </nav>
+
+
+  <footer id="social container">
+    <div class="social">
+      <p class="social-r">&COPY;Marvel 2020. Data provided by Marvel.</p>
+      <div class="social-content">
+        <a href="https://developer.marvel.com/" target="_blank"><i class="fas fa-home"></i></a>
+        <a href="https://www.instagram.com/marvel/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://marvelentertainment.tumblr.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/MarvelLatinoamerica/?brand_redir=6883542487" target="_blank"><i
+            class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="./script/md5.js"></script>
+  <script src="./script/app.js"></script>
+  <script src="./script/pagination.js"></script>
+ 
+</body>
+
+</html>
